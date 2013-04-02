@@ -2,10 +2,50 @@
 <html>
 	<head>
 		<title>Monette - Assignment 2</title>
+		
+		<style>
+			#container {
+				width: 940px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.button {
+				display: inline-block;
+				margin-right: 20px;
+			}
+			.button a {
+				padding:10px 25px;
+				border-radius: 3px;
+				text-decoration: none;
+				text-transform: uppercase;
+				box-shadow: 2px 3px 6px 0px #010101;
+			}
+			.button.red a { background: #FF3366; }
+			.button.orange a { background: #FF6633; }
+			.button.yellow a { background: #FFCC33; }
+			.button.green a { background: #CCFF33; }
+			.button.blue a {  background: #33CCFF; }
+			.button.purple a {  background: #CC33FF; }
+			.button.reset a {  background: #eeeeee; }
+
+			
+		</style>
 	</head>
 	
 	<body>
-		<span>Cupcake ipsum dolor sit amet marshmallow powder halvah ice cream sugar plum lemon drops muffin chocolate. </span>
+		<div id="container">
+			<h1>Assignment 2 - Monette</h1>
+			<p>Cupcake ipsum dolor sit amet marshmallow powder halvah ice cream sugar plum lemon drops muffin chocolate. </p>
+			
+			<div class="button red" onclick="document.bgColor = '#B8002E';"><a href="#">Red</a></div>
+			<div class="button orange"><a href="#" onclick="document.bgColor = '#F53D00';">Orange</a></div>
+			<div class="button yellow"><a href="#" onclick="document.bgColor = '#F5C13D';">Yellow</a></div>
+			<div class="button green"><a href="#" onclick="document.bgColor = '#8AB800';">Green</a></div>
+			<div class="button blue"><a href="#" onclick="document.bgColor = '#008AB8';">Blue</a></div>
+			<div class="button purple"><a href="#" onclick="document.bgColor = '#6633FF';">Purple</a></div>
+			<div class="button reset"><a href="#" onclick="document.bgColor = '#ffffff';">Stop that!</a></div>
+		</div>
 	</body>
 
 </html>
+
