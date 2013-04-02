@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Monette - Assignment 2</title>
+		<title>Assignment 2 - Monette</title>
 		
 		<style>
 			#container {
-				width: 940px;
+				max-width: 940px;
 				margin: 0 auto;
 				text-align: center;
 			}
-			.button {
-				display: inline-block;
-				margin-right: 20px;
+			ul.buttons { 
+				width: 100%; 
+				padding: 0;
 			}
-			.button a {
+			li {
+				display: inline-block;
+				box-sizing: border-box;
+				min-height: 60px;
+			}
+			li a {
 				padding:10px 25px;
 				border-radius: 3px;
 				text-decoration: none;
-				text-transform: uppercase;
-				box-shadow: 2px 3px 6px 0px #010101;
+				box-shadow: 1px 2px 6px 0px #010101;
+				margin-right: 20px;
 			}
-			.button.red a { background: #FF3366; }
-			.button.orange a { background: #FF6633; }
-			.button.yellow a { background: #FFCC33; }
-			.button.green a { background: #CCFF33; }
-			.button.blue a {  background: #33CCFF; }
-			.button.purple a {  background: #CC33FF; }
-			.button.reset a {  background: #eeeeee; }
-
-			
+			li.red a { background: #FF3366; }
+			li.orange a { background: #FF6633; }
+			li.yellow a { background: #FFCC33; }
+			li.green a { background: #CCFF33; }
+			li.blue a {  background: #33CCFF; }
+			li.purple a {  background: #CC33FF; }
+			li.reset a {  background: #eeeeee; }
 		</style>
 	</head>
 	
 	<body>
 		<div id="container">
 			<h1>Assignment 2 - Monette</h1>
-			<p>Cupcake ipsum dolor sit amet marshmallow powder halvah ice cream sugar plum lemon drops muffin chocolate. </p>
-			
-			<div class="button red" onclick="document.bgColor = '#B8002E';"><a href="#">Red</a></div>
-			<div class="button orange"><a href="#" onclick="document.bgColor = '#F53D00';">Orange</a></div>
-			<div class="button yellow"><a href="#" onclick="document.bgColor = '#F5C13D';">Yellow</a></div>
-			<div class="button green"><a href="#" onclick="document.bgColor = '#8AB800';">Green</a></div>
-			<div class="button blue"><a href="#" onclick="document.bgColor = '#008AB8';">Blue</a></div>
-			<div class="button purple"><a href="#" onclick="document.bgColor = '#6633FF';">Purple</a></div>
-			<div class="button reset"><a href="#" onclick="document.bgColor = '#ffffff';">Stop that!</a></div>
+			<p>Cupcake ipsum dolor sit amet marshmallow powder halvah ice cream sugar plum lemon drops muffin chocolate.</p>
+			<ul class="buttons">
+				<li class="red" onclick="document.bgColor = '#B8002E';"><a href="#">Red</a></li>
+				<li class="orange"><a href="#" onclick="document.bgColor = '#F53D00';">Orange</a></li>
+				<li class="yellow"><a href="#" onclick="document.bgColor = '#F5C13D';">Yellow</a></li>
+				<li class="green"><a href="#" onclick="document.bgColor = '#8AB800';">Green</a></li>
+				<li class="blue"><a href="#" onclick="document.bgColor = '#008AB8';">Blue</a></li>
+				<li class="purple"><a href="#" onclick="document.bgColor = '#6633FF';">Purple</a></li>
+				<li class="reset"><a href="#" onclick="document.bgColor = '#ffffff';">Stop that!</a></li>
+			</ul>
+
 		</div>
 	</body>
-
 </html>
 
