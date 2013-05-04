@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Assignment 5 - In class</title>
+        
+        <script>
+         function getTotal(){
+			 var total = 0;
+			 // Subtract two so that we exclude the last two inputs
+			 var totalLength = document.fruits.elements.length - 2;
+
+			 for(var i = 0; i < totalLength; i = i + 2){
+				var price = document.fruits.elements[i].value;
+			 	var qty = document.fruits.elements[i + 1].value;
+			 	total = total + price * qty * 100;
+			};
+			document.fruits.total.value = total / 100;
+		};
+		
+		var prices = [.99, 1.29, 1.49, 50000, 200, 700, 11.99, 45.99, 1.99, 6.99];
+		var descriptions = ['Apple(s)','Orange Soda(s)','Banana(s)', 'Tank(s)', 'Kitten(s)', 'iPhone(s)', 'Steak(s)', 'Fun Hat(s)', 'Bottle(s) of Water', 'Box(es) of Stale Crackers'];
+	
+        </script>
+    </head>
+    
+    <body>
+    	<h1>Steph's Really Weird Gift Emporium</h1>
+    	<form name="fruits">
+        
+        <script>
+			for(var i=0; i < prices.length; i ++) {
+			document.write('<input type="text" name="qty" value="0"></input>'+  descriptions[i] + '<input type="hidden" name="price" value="' + prices[i] + '"> </input>' + '<span>@ $' + prices[i] + ' each</span>' + '<br />');
+			}
+
+        </script>
+        
+             <input type="button" value="Total" onclick="getTotal();"> </input>
+             <input type="text" name="total" value=""> </input>
+
+
+        </form>
+    </body>
+</html>

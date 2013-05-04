@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+   	 	<title>Assignment 12 - inclass</title>
+    </head>
+    <script>
+    	ads = ['http://placekitten.com/g/200/300', 'http://placekitten.com/200/300','http://placekitten.com/g/400/500', 'http://placekitten.com/500/900','http://placekitten.com/g/900/900','http://placekitten.com/900/300','http://placekitten.com/g/150/500'];
+		
+		function swapAd(){
+			// Create a random number for the slideshow
+			var index = Math.floor(Math.random() * ads.length);
+			// if the random number is outside the indices of the array
+			if (index == ads.length){
+				swapAd();
+			}
+			var url = ads[index];
+			
+			if(ad){
+				ad.src = url;
+			} 		
+		}
+		//make the slideshow autoplay
+		var tId = setInterval(swapAd, 1000);
+    </script>
+    <body onLoad="swapAd();">
+    	<img src="" width="150" alt="Give me yo' money" name="ad"/>
+    </body>
+</html>

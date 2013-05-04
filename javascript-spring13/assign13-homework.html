@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Monette - Homework 13</title>
+        <script>
+        	function loadSelectedSite() {
+				var sel = siteform.sites;
+				var index = sel.selectedIndex;
+				var url = sel.options[index].value;
+				
+				document.location.href = url;
+			}
+        </script>
+        
+    </head>
+    
+    
+    <body bgcolor="papayawhip">
+    <h2>Steph's Favorite Sites</h2>
+    <form name="siteform">
+        <select name="sites" onchange="loadSelectedSite()">
+            <option>--Select--</option>
+            <option value="http://www.modcloth.com">Modcloth</option>
+            <option value="http://www.netflix.com">Netflix</option>
+        	<option value="http://www.theonion.com">The Onion</option>
+            <option value="http://www.etsy.com/">Etsy</option>
+            <option value="http://cat-bounce.com/">Cat Bounce</option>
+            <option value="http://ffffound.com">ffffound</option>
+            <option value="http://armorgames.com/play/5379/sushi-cat">Sushi Cat</option>
+            <option value="http://www.retronaut.com/">Retronaut</option>
+        </select>
+<!--         <input type="button" value="Load" onClick="loadSelectedSite()"></input> -->
+    </form>
+     </body>
+</html>

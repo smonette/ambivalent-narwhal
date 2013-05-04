@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+   	 	<title>Monette - Homework 12</title>
+    </head>
+    <script>
+    	ads = ['http://placehold.it/400x200&text=ad1', 'http://placehold.it/400x200&text=ad2','http://placehold.it/400x200&text=ad3', 'http://placehold.it/400x200&text=ad4'];
+		
+		function swapAd(){
+			// Create a random number for the slideshow
+			var index = Math.floor(Math.random() * ads.length);
+			// if the random number is outside the indices of the array
+			if (index == ads.length){
+				swapAd();
+			}
+			var url = ads[index];
+			
+			if(ad){
+				// Prevent ad from repeating
+				if(ad.src == url){
+					swapAd();
+				} else{
+					ad.src = url;
+				}
+			}		
+		}
+		//make the slideshow autoplay
+		var tId = setInterval(swapAd, 1000);
+    </script>
+    <body onLoad="swapAd();">
+    	<img src="" width="400" alt="Give me yo' money" name="ad"/>
+    </body>
+</html>

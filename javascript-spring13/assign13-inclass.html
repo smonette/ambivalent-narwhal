@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Assign 13 - inclass</title>
+        <script>
+        	function loadSelectedSite() {
+				var sel = siteform.sites;
+				var index = sel.selectedIndex;
+				var seloption = sel.options[sel.selectedIndex];
+				var url = seloption.value;
+				console.log(url);	
+			}
+        </script>
+        
+    </head>
+    
+    
+    <body>
+    <form name="siteform">
+        <select name="sites">
+        	<option value="http://www.theonion.com">The Onion</option>
+            <option value="http://www.modcloth.com">Modcloth</option>
+            <option value="http://www.netflix.com">Netflix</option>
+            <option value="http://www.thesimpsons.com">The Simpsons</option>
+        </select>
+        <input type="button" value="Load" onClick="loadSelectedSite()"></input>
+    </form>
+     </body>
+</html>
