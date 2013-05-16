@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+   	 	<title>Monette - Homework 11</title>
+    </head>
+    <script>
+    	images = ['http://placehold.it/400x200&text=image1', 'http://placehold.it/400x200&text=image2','http://placehold.it/400x200&text=image3', 'http://placehold.it/400x200&text=image4'];
+		
+		function swapAd(){
+			// Create a random number for the slideshow
+			var index = Math.floor(Math.random() * images.length);
+			// if the random number is outside the indices of the array
+			if (index == images.length){
+				swapAd();
+			}
+			var url = images[index];
+			
+			if(ad){
+				// Prevent image from repeating
+				if(ad.src == url){
+					swapAd();
+				} else{
+					ad.src = url;
+				}
+			}
+		}
+		
+		function startAdRoll() {
+			swapAd();
+			tId = setInterval(swapAd, 500);
+		}
+		
+		function stopAdRoll() {
+			clearInterval(tId);
+		}
+    </script>
+    <body>
+    	<img src="http://placehold.it/400x200&text=image1" width="400" name="ad" onmouseover="startAdRoll()" onmouseout="stopAdRoll()" />
+    </body>
+</html>
