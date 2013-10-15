@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ski Utah Rentals</title>
+    <title>Ski Utah Rentals - Reservations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="stylesheets/screen.css" rel="stylesheet" media="screen">
   </head>
-  <body id="homepage">
+  <body id="page">
   	<div id="container">
 	  <div class="navbar-header">
 	    <a class="navbar-brand" href="index.html">Brand</a>
+
 	  </div>
 	    
 		<nav class="navbar navbar-default" role="navigation">
@@ -34,7 +35,7 @@
 		          <li><a href="#">Family Fun</a></li>
 		        </ul>
 		      </li>
-		       <li class="dropdown">
+		            <li class="dropdown">
 		        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Directions</a>
 		        <ul class="dropdown-menu">
 		          <li><a href="#">Oaks at Wasatch</a></li>
@@ -44,7 +45,7 @@
 		      <li class="link">
 		        <a href="contact-us.html">Contact Us</a>
 		      </li>
-		      <li class="link">
+		      <li class="link active">
 		        <a href="#">Reservations</a>
 		      </li>
 		    </ul>
@@ -52,35 +53,46 @@
 		</nav>
 		
 		
-		<!-- begin content -->
+			<!-- begin content -->
 		<section>
+		<div class="row">
+			  <div class="col-md-6">
+				  <h2>Availability</h2>
+				  <p>Before we can reserve a condo, we need to see what's available! Use this form below to check which units are open during your trip to Utah.</p>
+				  
+			  </div>
+			  <div class="col-md-6">
+			  
+			  </div>
+			</div>
+		<br /> <br />
 			<div class="row">
-			  <div class="col-md-8">
-				  <p>Welcome to Utah’s world-class winter wonderland—home to 13 ski resorts, the Utah Olympic Park and Oval, tubing hills, Nordic ski areas and outdoor adventure galore. Let us offer you a warm, inviting place to call home.</p>
-				  <p>Properties located in Cottonwood Heights in Salt Lake County, close to Snowbird, Alta, Brighton and Solitude Resorts. Book by the day, week or month. Ski Utah Rentals are roomy, clean and convenient, close to both city amenities and the scenic Wasatch mountains, covered by the "Greatest Snow on Earth."</p>
+			  <div class="col-md-6">
+			  	<img src="http://placehold.it/500x300&text=current+promotions" />
+			  </div>
+			  <div class="col-md-6">
+			  
+			  <label for="exampleInputEmail1">Desired Unit</label>
+			  <select class="form-control">
+			  	  <option>All Units</option>
+				  <option>Oaks at Wasatch</option>
+				  <option>Ft. Union Powder #1</option>
+				  <option>Ft. Union Powder #2</option>
+				</select>
+			  <br /> <br />
+				  <label for="exampleInputEmail1">Select your dates:</label>
+				  <img src="" />
 				  <br />
-				  <div class="row">
-					  <div class="col-md-8">
-						  <ul>
-							  <li>Fully Furnished Condos</li>
-							  <li>High Speed Wi-Fi Connections</li>
-							  <li>Private Hot tubs</li>
-							  <li>Gorgeous Mountain Views</li>
-							  <li>Just Minutes from ski bus stops</li>
-						  </ul>
-					  </div>
-					  <div class="col-md-4">
-						  <button type="button" class="btn btn-default">Check out the slopes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &raquo;</button>
-						  <br /><br />
-						  <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-calendar"></span>&nbsp;&nbsp;Reserve Now  &nbsp;&nbsp;&nbsp;&nbsp; &raquo;</button>
-					  </div>
-				  </div>
+				  <button type="submit" class="btn btn-default">Check Availability</button>
 			  </div>
-			  <div class="col-md-4">
-				  <img src="http://placehold.it/300x300&text=snow+forecast" />
+			</div>
+			<br /><br />
+			<div class="progress">
+			  <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+			    <span class="sr-only">30% Complete</span>
 			  </div>
-	</div>
-</section>
+			</div>
+		</section>
 		<footer>
 			
 		</footer>
@@ -96,5 +108,10 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+	    $('.carousel').carousel({
+		  interval: 2000
+		});
+    </script>
   </body>
 </html>
