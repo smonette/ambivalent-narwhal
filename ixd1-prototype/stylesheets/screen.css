@@ -66,3 +66,18 @@ body#page {
 body#page section {
   margin-top: 250px;
 }
+
+/* line 64, ../sass/screen.scss */
+footer {
+  margin-top: 150px;
+}
+/* line 66, ../sass/screen.scss */
+footer p {
+  text-align: center;
+}
+/* line 68, ../sass/screen.scss */
+footer p a {
+  text-transform: uppercase;
+  color: #777;
+  padding: 0 25px;
+}
