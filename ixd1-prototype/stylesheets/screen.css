@@ -51,7 +51,7 @@ section .dl-horizontal dt {
 
 /* line 49, ../sass/screen.scss */
 body#homepage {
-  background: url("http://placehold.it/1500x450/d3d3d3/d3d3d3&text=photo+of+mountains") 0 0 no-repeat;
+  background: url("../images/photoofmountains.gif") 0 0 no-repeat;
 }
 /* line 52, ../sass/screen.scss */
 body#homepage section {
@@ -60,7 +60,7 @@ body#homepage section {
 
 /* line 56, ../sass/screen.scss */
 body#page {
-  background: url("http://placehold.it/1500x250/d3d3d3/d3d3d3&text=photo+of+mountains") 0 0 no-repeat;
+  background: url("../images/photoofmountainssmall.gif") 0 0 no-repeat;
 }
 /* line 59, ../sass/screen.scss */
 body#page section {
