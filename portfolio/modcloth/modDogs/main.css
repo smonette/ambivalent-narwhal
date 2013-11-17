@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/*general styles */
+body {
+  background-color: #F0F6FF;
+  font-size: 13px;
+  line-height: 21px;
+}
+.clear {
+	clear:both;
+}
+.horizontal_dots {
+	background: url("img/FooterDots_7x2.png") repeat-x 4px 0;
+	height: 7px;
+}
+span {
+	font-family: 'Lemon', cursive;
+	display: block;
+}
+#container {
+	max-width: 999px;
+	margin: 0 auto 0 auto;
+	background-color: #ffffff;
+	padding: 0px 20px;
+	min-height: 600px;
+}
+/* header */
+#header #modcloth_logo {
+	text-indent: -99999px;
+	background: url("img/sg-logo.png") 0 0 no-repeat;
+	float: left;
+	height: 54px;
+	margin: 12px 0;
+	width: 208px;
+}
+#header #searchBar_placeholder {
+	background: url("img/searchBar.png") 0 0 no-repeat;
+	width: 450px;
+	height: 65px;
+	float: right;
+}
+#header #primaryNavigation_placeholder {
+	background: url("img/primaryNavigation.png") 0 0 no-repeat;
+	height: 50px;
+	width: 1007px;
+	margin: 0 auto;
+}
+
+/* feature */	
+#modDogs {
+	padding: 20px 15px;
+	float; left;
+	height: auto;
+}
+#myCarousel {
+	width: 60%;
+	float: left;
+}
+#modDogs p {
+	width: 36%;
+	float: left;
+	margin-right: 35px;
+}
+#modDogs p span {
+	color: #F8878C;
+	font-size: 27px;
+	padding-bottom: 30px;
+	background: url('img/footerDots_7x2.png') repeat-x 4px 35px;
+}
+.carousel-control {
+	display: none;
+}
+/* facebook bar */
+#socialMediaBar {
+	background:url('img/dots.png') 0 0 repeat;
+	border: solid 10px #f5f0ea;
+	margin: 15px;
+	height: 78px;
+	width: 95%;
+}
+#socialMediaBar span {
+	padding: 10px;
+	font-size: 19px;
+	line-height: 30px;
+	color: #9ABCFF;
+	width: 37%;
+	float: left;
+}
+#socialMediaBar p {
+	width:58%;
+	float: left;
+	padding: 20px 5px;
+}
+#socialMediaBar p a.sprite {
+	background: url('img/socialMediaSprite.png') 0 -20px no-repeat;
+	width: 135px;
+	display: inline-block;
+	margin: 0 20px;
+	padding-left: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #9ABCFF;
+}
+#socialMediaBar p a.sprite:hover {
+	background: url('img/socialMediaSprite.png') 0 0 no-repeat;
+	color: #3B5998;
+	text-decoration: none;
+}
+/*footer */
+#footer {
+	background: url('img/modClothFooter.png') 0 -165px no-repeat;
+	height:450px;
+	margin-left: -10px;
+}
+

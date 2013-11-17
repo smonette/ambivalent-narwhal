@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+		<title>Monette - JQuery Tooltip</title>
+		<style type="text/css">
+			ul#navigation li {
+				list-style: none;
+				margin-top: 50px;
+			}
+			#tooltip {
+				position: absolute;
+				border: 3px solid #69F;
+				background: #D9E6FF;
+				padding:5px;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	</head>
+	<body>
+		<ul id="navigation">
+			<li><a href="http://www.modcloth.com/" title="ModCloth's Homepage" rel="tooltip">Home</a></li>
+			<li><a href="http://www.modcloth.com/about_us" title="About ModCloth" rel="tooltip">About Us</a></li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+			$(document).ready(function() {
+			    $('a[rel=tooltip]').mouseover(function(e) {
+				    var trigger = $(this);
+			        var text = trigger.attr('title');
+			        trigger.removeAttr("title");
+			        trigger.data("tooltip", text);
+			        $(document.body).append("<div id='tooltip'>" + text + "</div>");
+			        var triggerOffset = trigger.offset();
+			        $("#tooltip").css("top", triggerOffset.top + trigger.height() + 5).css("left", triggerOffset.left); //sets the position of the tooltip
+			    })
+			    .mouseout(function() {
+				    var trigger = $(this);
+				    trigger.attr("title", trigger.data("tooltip"));
+					$("#tooltip").remove();
+			    });
+			});
+	</script>
+	
+</html>
