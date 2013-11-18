@@ -4,15 +4,55 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import url('http://fonts.googleapis.com/css?family=Lato:400,700,900');
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
+body{ font-family: 'Lato', sans-serif; }
 
+nav.navbar {
+	min-height: 0px;
+	background-color: #ffffff;
+	.navbar-header {
+		background: #ffffff;
+		
+		.navbar-brand {
+			background: url('http://localhost:8888/ixd2-proto/images/logo.jpg') 0 0 no-repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			width: 75px;
+			height: 45px;
+		}
+	}
+}
 
 
 
 /* Tablet and Desktop */
 @media (min-width: 768px) { 
-	
+	nav.navbar {
+		margin-bottom: 0;
+		background-color: #f8f8f8;
+
+		.navbar-header {
+			float: none;
+			
+			.navbar-brand {
+				width: 290px;
+				height: 175px;
+				clear: both;
+				margin: 0 auto;
+				display: block;
+				float: none;
+			}
+		}
+	}
+	ul.navbar-nav {
+		li a {
+			padding: 15px 30px;
+		}
+	}
 	
 }
