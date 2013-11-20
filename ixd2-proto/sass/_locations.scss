@@ -90,28 +90,7 @@
 	
 	/* Tablet and Desktop */
 	@media (min-width: 992px) { 
-		nav.navbar {
-			margin-bottom: 0;
-			background-color: #f8f8f8;
-	
-			.navbar-header {
-				float: none;
-				
-				.navbar-brand {
-					width: 290px;
-					height: 175px;
-					clear: both;
-					margin: 0 auto;
-					display: block;
-					float: none;
-				}
-			}
-		}
-		ul.navbar-nav {
-			li a {
-				padding: 15px 30px;
-			}
-		}
+
 		ul.location-search{
 			background-image: url('http://placehold.it/400x150&text=Find%20Hearts');
 			padding-top: 150px;

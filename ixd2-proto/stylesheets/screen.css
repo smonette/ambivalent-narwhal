@@ -100,6 +100,32 @@ nav.navbar .navbar-header .navbar-brand {
   height: 45px;
 }
 
+/* Tablet and Desktop */
+@media (min-width: 992px) {
+  /* line 36, ../sass/screen.scss */
+  nav.navbar {
+    margin-bottom: 0;
+    background-color: #f8f8f8;
+  }
+  /* line 40, ../sass/screen.scss */
+  nav.navbar .navbar-header {
+    float: none;
+  }
+  /* line 43, ../sass/screen.scss */
+  nav.navbar .navbar-header .navbar-brand {
+    width: 290px;
+    height: 175px;
+    clear: both;
+    margin: 0 auto;
+    display: block;
+    float: none;
+  }
+
+  /* line 54, ../sass/screen.scss */
+  ul.navbar-nav li a {
+    padding: 15px 30px;
+  }
+}
 /* line 1, ../sass/_locations.scss */
 #locations {
   /* Small Tablet */
@@ -204,77 +230,55 @@ nav.navbar .navbar-header .navbar-brand {
   }
 }
 @media (min-width: 992px) {
-  /* line 93, ../sass/_locations.scss */
-  #locations nav.navbar {
-    margin-bottom: 0;
-    background-color: #f8f8f8;
-  }
-  /* line 97, ../sass/_locations.scss */
-  #locations nav.navbar .navbar-header {
-    float: none;
-  }
-  /* line 100, ../sass/_locations.scss */
-  #locations nav.navbar .navbar-header .navbar-brand {
-    width: 290px;
-    height: 175px;
-    clear: both;
-    margin: 0 auto;
-    display: block;
-    float: none;
-  }
-  /* line 111, ../sass/_locations.scss */
-  #locations ul.navbar-nav li a {
-    padding: 15px 30px;
-  }
-  /* line 115, ../sass/_locations.scss */
+  /* line 94, ../sass/_locations.scss */
   #locations ul.location-search {
     background-image: url("http://placehold.it/400x150&text=Find%20Hearts");
     padding-top: 150px;
   }
-  /* line 118, ../sass/_locations.scss */
+  /* line 97, ../sass/_locations.scss */
   #locations ul.location-search li {
     width: 100%;
     height: 130px;
     padding: 25px;
   }
-  /* line 119, ../sass/_locations.scss */
+  /* line 98, ../sass/_locations.scss */
   #locations ul.location-search li button {
     display: none;
   }
-  /* line 123, ../sass/_locations.scss */
+  /* line 102, ../sass/_locations.scss */
   #locations ul.location-search li h2 {
     display: block;
     margin-bottom: 10px;
   }
-  /* line 127, ../sass/_locations.scss */
+  /* line 106, ../sass/_locations.scss */
   #locations ul.location-search li select.big, #locations ul.location-search li div.row {
     display: block;
   }
-  /* line 128, ../sass/_locations.scss */
+  /* line 107, ../sass/_locations.scss */
   #locations ul.location-search li:first-child {
     background-image: url("http://placehold.it/450x100/aaaaaa/aaaaaa");
   }
-  /* line 131, ../sass/_locations.scss */
+  /* line 110, ../sass/_locations.scss */
   #locations ul.location-search li:last-child {
     background-image: url("http://placehold.it/450x100/aaaaaa/aaaaaa");
   }
-  /* line 136, ../sass/_locations.scss */
+  /* line 115, ../sass/_locations.scss */
   #locations .results {
     min-height: 595px;
   }
 }
 
 /* line 3, ../sass/_about.scss */
-#aboutall div.row div {
+#aboutall div.row#heart-grid div {
   position: relative;
   margin-bottom: 25px;
 }
 /* line 6, ../sass/_about.scss */
-#aboutall div.row div img {
+#aboutall div.row#heart-grid div img {
   width: 100%;
 }
 /* line 7, ../sass/_about.scss */
-#aboutall div.row div h2 {
+#aboutall div.row#heart-grid div h2 {
   position: absolute;
   bottom: 20px;
   background: rgba(102, 102, 102, 0.9);
