@@ -285,5 +285,9 @@ nav.navbar .navbar-header .navbar-brand {
   color: #ffffff;
   padding: 10px 20px 10px 50px;
 }
+/* line 13, ../sass/_about.scss */
+#aboutall div.row#heart-grid div h2:hover {
+  background: #666666;
+}
 
 /* aboutall */
