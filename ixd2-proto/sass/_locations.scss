@@ -1,0 +1,279 @@
+#locations {
+	.results {
+		width: 100%;
+		overflow: hidden;
+		background-image: url('../images/map.png');
+		background-repeat: no-repeat;
+		min-height: 400px;
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
+		background-size: contain;
+		p button {margin: 15px 0 0 10px;}
+		
+	}
+	.results2 {
+		width: 100%;
+		p button {margin: 15px 0 0 10px;}
+		
+		ul.list-view{
+			margin-top: 20px;
+			li {
+				height: 110px;
+				border-bottom: 1px solid #aaaaaa;
+				a { display: block;}
+				.art-info {
+					float: left;
+					width: 60%;
+					img {
+						width: 75px;
+						max-height: 100px;
+						margin-right: 15px;
+						float: left;
+					}	
+					h2{ font-weight: 700; }
+				}
+	
+				.piece-location {
+					width: 40%;
+					float: right;
+				}
+			}
+	
+		}
+	}
+	
+	ul.location-search{
+		background-image: url('http://placehold.it/400x100&text=Find%20Hearts');
+		background-repeat:no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		padding-top: 100px;
+	
+		li { 
+			box-sizing: border-box;
+			width: 50%;
+			display: inline-block;
+			float: left;
+			height: 44px;
+			background-repeat:no-repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			border: 1px solid #ffffff;
+			
+			h2, div.row, select.big { display: none; }
+		
+			&:first-child{
+				background-image: url('http://placehold.it/450x100&text=By%20Neighborhood');
+			}
+			&:last-child{
+				background-image: url('http://placehold.it/450x100&text=Location');
+			}
+		}
+	
+	}
+	
+	/* Small Tablet */
+	
+	@media (min-device-width : 420px) and (max-device-width : 991px) {
+	
+		ul.location-search{
+			background-image: url('http://placehold.it/800x100&text=Find%20Hearts');
+			padding-top: 100px;
+			li{
+				width: 100%;
+				height: 200px;
+				&:first-child{
+					background-image: url('http://placehold.it/450x50/aaaaaa/aaaaaa');
+				}
+				&:last-child{
+					background-image: url('http://placehold.it/450x50/aaaaaa/aaaaaa');
+				}
+			}
+		}
+	}
+
+	
+	/* Tablet and Desktop */
+	@media (min-width: 992px) { 
+
+		ul.location-search{
+			background-image: url('http://placehold.it/400x150&text=Find%20Hearts');
+			padding-top: 150px;
+			li{
+				button{ display: none; }
+				width: 100%;
+				height: 130px;
+				padding: 25px;
+				h2{
+					display: block;
+					margin-bottom: 10px;
+				}
+				select.big, div.row { display: block; }
+				&:first-child{
+					background-image: url('http://placehold.it/450x100/aaaaaa/aaaaaa');
+				}
+				&:last-child{
+					background-image: url('http://placehold.it/450x100/aaaaaa/aaaaaa');
+				}
+			}
+		}
+		.results {
+			min-height: 595px;
+		}
+		
+}
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+/*
+.results2 {
+	width: 100%;
+	p button {margin: 15px 0 0 10px;}
+	
+	ul.list-view{
+		margin-top: 20px;
+		li {
+			margin-top: 10px;
+			min-height: 110px;
+			border-bottom: 1px solid #aaaaaa;
+			padding-bottom: 15px !important;
+			a { display: block;}
+			.art-info {
+
+				img {
+					width: 75px;
+					max-height: 100px;
+					margin-right: 15px;
+					float: left;
+				}	
+				h2{ font-weight: 700; }
+			}
+
+			.art-info, .piece-location {
+				width: 100%;
+				clear: both;
+			}
+			.art-info{
+				margin-bottom: 10px;
+			}
+			.piece-location {
+				padding-top: 15px 0;
+				p, a {
+					text-align: left;
+				}
+			}
+		}
+
+	}
+}
+*/
+
+
+
+/*
+	ul.location-search{
+		background-image: url('http://placehold.it/400x150&text=Find%20Hearts');
+		padding-top: 150px;
+		li{
+			button{ display: none; }
+			width: 100%;
+			height: 130px;
+			padding: 25px;
+			h2{
+				display: block;
+				margin-bottom: 10px;
+			}
+			select.big, div.row { display: block; }
+			&:first-child{
+				background-image: url('http://placehold.it/450x100/aaaaaa/aaaaaa');
+			}
+			&:last-child{
+				background-image: url('http://placehold.it/450x100/aaaaaa/aaaaaa');
+			}
+		}
+	}
+	.results {
+		min-height: 595px;
+	}
+
+	.results2 {
+	width: 100%;
+	p button {margin: 15px 0 0 10px;}
+	
+	ul.list-view{
+		li {
+			height: 110px;
+			border-bottom: 1px solid #aaaaaa;
+			.art-info {
+				float: left;
+				width: 60%;
+				clear: none;
+			}
+
+			.piece-location {
+				width: 40%;
+				float: right;
+				clear: none;
+			}
+		}
+
+	}
+}
+	
+*/
+	
+	
+	
+	
+/*
+ul.location-search{
+	background-image: url('http://placehold.it/400x100&text=Find%20Hearts');
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top: 100px;
+
+	li { 
+		box-sizing: border-box;
+		width: 50%;
+		display: inline-block;
+		float: left;
+		height: 44px;
+		background-repeat:no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		border: 1px solid #ffffff;
+		
+		h2, div.row, select.big { display: none; }
+	
+		&:first-child{
+			background-image: url('http://placehold.it/450x100&text=By%20Neighborhood');
+		}
+		&:last-child{
+			background-image: url('http://placehold.it/450x100&text=Location');
+		}
+	}
+
+}
+*/

@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic");
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -80,16 +80,26 @@ body {
   overflow: hidden;
 }
 
+/* line 15, ../sass/screen.scss */
+strong {
+  font-weight: 700;
+}
+
 /* line 16, ../sass/screen.scss */
+i {
+  font-style: italic;
+}
+
+/* line 17, ../sass/screen.scss */
 nav.navbar {
   min-height: 0px;
   background-color: #ffffff;
 }
-/* line 19, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 nav.navbar .navbar-header {
   background: #ffffff;
 }
-/* line 22, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 nav.navbar .navbar-header .navbar-brand {
   background: url("http://localhost:8888/ixd2-proto/images/logo.jpg") 0 0 no-repeat;
   -webkit-background-size: cover;
@@ -100,8 +110,39 @@ nav.navbar .navbar-header .navbar-brand {
   height: 45px;
 }
 
-/* line 33, ../sass/screen.scss */
-.results {
+/* Tablet and Desktop */
+@media (min-width: 992px) {
+  /* line 39, ../sass/screen.scss */
+  nav.navbar {
+    margin-bottom: 0;
+    background-color: #f8f8f8;
+  }
+  /* line 43, ../sass/screen.scss */
+  nav.navbar .navbar-header {
+    float: none;
+  }
+  /* line 46, ../sass/screen.scss */
+  nav.navbar .navbar-header .navbar-brand {
+    width: 290px;
+    height: 175px;
+    clear: both;
+    margin: 0 auto;
+    display: block;
+    float: none;
+  }
+
+  /* line 58, ../sass/screen.scss */
+  ul.navbar-nav li a {
+    padding: 15px 30px;
+  }
+}
+/* line 1, ../sass/_locations.scss */
+#locations {
+  /* Small Tablet */
+  /* Tablet and Desktop */
+}
+/* line 2, ../sass/_locations.scss */
+#locations .results {
   width: 100%;
   overflow: hidden;
   background-image: url("../images/map.png");
@@ -112,65 +153,54 @@ nav.navbar .navbar-header .navbar-brand {
   -o-background-size: contain;
   background-size: contain;
 }
-/* line 43, ../sass/screen.scss */
-.results p button {
+/* line 12, ../sass/_locations.scss */
+#locations .results p button {
   margin: 15px 0 0 10px;
 }
-
-/* line 51, ../sass/screen.scss */
-.results2 {
+/* line 15, ../sass/_locations.scss */
+#locations .results2 {
   width: 100%;
 }
-/* line 53, ../sass/screen.scss */
-.results2 p button {
+/* line 17, ../sass/_locations.scss */
+#locations .results2 p button {
   margin: 15px 0 0 10px;
 }
-/* line 55, ../sass/screen.scss */
-.results2 ul.list-view {
+/* line 19, ../sass/_locations.scss */
+#locations .results2 ul.list-view {
   margin-top: 20px;
 }
-/* line 57, ../sass/screen.scss */
-.results2 ul.list-view li {
-  margin-top: 10px;
-  min-height: 110px;
+/* line 21, ../sass/_locations.scss */
+#locations .results2 ul.list-view li {
+  height: 110px;
   border-bottom: 1px solid #aaaaaa;
-  padding-bottom: 15px !important;
 }
-/* line 62, ../sass/screen.scss */
-.results2 ul.list-view li a {
+/* line 24, ../sass/_locations.scss */
+#locations .results2 ul.list-view li a {
   display: block;
 }
-/* line 65, ../sass/screen.scss */
-.results2 ul.list-view li .art-info img {
+/* line 25, ../sass/_locations.scss */
+#locations .results2 ul.list-view li .art-info {
+  float: left;
+  width: 60%;
+}
+/* line 28, ../sass/_locations.scss */
+#locations .results2 ul.list-view li .art-info img {
   width: 75px;
   max-height: 100px;
   margin-right: 15px;
   float: left;
 }
-/* line 71, ../sass/screen.scss */
-.results2 ul.list-view li .art-info h2 {
+/* line 34, ../sass/_locations.scss */
+#locations .results2 ul.list-view li .art-info h2 {
   font-weight: 700;
 }
-/* line 74, ../sass/screen.scss */
-.results2 ul.list-view li .art-info, .results2 ul.list-view li .piece-location {
-  width: 100%;
-  clear: both;
+/* line 37, ../sass/_locations.scss */
+#locations .results2 ul.list-view li .piece-location {
+  width: 40%;
+  float: right;
 }
-/* line 78, ../sass/screen.scss */
-.results2 ul.list-view li .art-info {
-  margin-bottom: 10px;
-}
-/* line 81, ../sass/screen.scss */
-.results2 ul.list-view li .piece-location {
-  padding-top: 15px 0;
-}
-/* line 83, ../sass/screen.scss */
-.results2 ul.list-view li .piece-location p, .results2 ul.list-view li .piece-location a {
-  text-align: left;
-}
-
-/* line 92, ../sass/screen.scss */
-ul.location-search {
+/* line 46, ../sass/_locations.scss */
+#locations ul.location-search {
   background-image: url("http://placehold.it/400x100&text=Find%20Hearts");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -179,8 +209,8 @@ ul.location-search {
   background-size: cover;
   padding-top: 100px;
 }
-/* line 101, ../sass/screen.scss */
-ul.location-search li {
+/* line 55, ../sass/_locations.scss */
+#locations ul.location-search li {
   box-sizing: border-box;
   width: 50%;
   display: inline-block;
@@ -193,127 +223,253 @@ ul.location-search li {
   background-size: cover;
   border: 1px solid #ffffff;
 }
-/* line 114, ../sass/screen.scss */
-ul.location-search li h2, ul.location-search li div.row, ul.location-search li select.big {
+/* line 68, ../sass/_locations.scss */
+#locations ul.location-search li h2, #locations ul.location-search li div.row, #locations ul.location-search li select.big {
   display: none;
 }
-/* line 116, ../sass/screen.scss */
-ul.location-search li:first-child {
+/* line 70, ../sass/_locations.scss */
+#locations ul.location-search li:first-child {
   background-image: url("http://placehold.it/450x100&text=By%20Neighborhood");
 }
-/* line 119, ../sass/screen.scss */
-ul.location-search li:last-child {
+/* line 73, ../sass/_locations.scss */
+#locations ul.location-search li:last-child {
   background-image: url("http://placehold.it/450x100&text=Location");
 }
-
-/* Small Tablet */
 @media (min-device-width: 420px) and (max-device-width: 991px) {
-  /* line 130, ../sass/screen.scss */
-  ul.location-search {
+  /* line 84, ../sass/_locations.scss */
+  #locations ul.location-search {
     background-image: url("http://placehold.it/800x100&text=Find%20Hearts");
     padding-top: 100px;
   }
-  /* line 133, ../sass/screen.scss */
-  ul.location-search li {
+  /* line 87, ../sass/_locations.scss */
+  #locations ul.location-search li {
     width: 100%;
     height: 200px;
   }
-  /* line 136, ../sass/screen.scss */
-  ul.location-search li:first-child {
+  /* line 90, ../sass/_locations.scss */
+  #locations ul.location-search li:first-child {
     background-image: url("http://placehold.it/450x50/aaaaaa/aaaaaa");
   }
-  /* line 139, ../sass/screen.scss */
-  ul.location-search li:last-child {
+  /* line 93, ../sass/_locations.scss */
+  #locations ul.location-search li:last-child {
     background-image: url("http://placehold.it/450x50/aaaaaa/aaaaaa");
   }
 }
-/* Tablet and Desktop */
 @media (min-width: 992px) {
-  /* line 151, ../sass/screen.scss */
-  nav.navbar {
-    margin-bottom: 0;
-    background-color: #f8f8f8;
-  }
-  /* line 155, ../sass/screen.scss */
-  nav.navbar .navbar-header {
-    float: none;
-  }
-  /* line 158, ../sass/screen.scss */
-  nav.navbar .navbar-header .navbar-brand {
-    width: 290px;
-    height: 175px;
-    clear: both;
-    margin: 0 auto;
-    display: block;
-    float: none;
-  }
-
-  /* line 169, ../sass/screen.scss */
-  ul.navbar-nav li a {
-    padding: 15px 30px;
-  }
-
-  /* line 173, ../sass/screen.scss */
-  ul.location-search {
+  /* line 104, ../sass/_locations.scss */
+  #locations ul.location-search {
     background-image: url("http://placehold.it/400x150&text=Find%20Hearts");
     padding-top: 150px;
   }
-  /* line 176, ../sass/screen.scss */
-  ul.location-search li {
+  /* line 107, ../sass/_locations.scss */
+  #locations ul.location-search li {
     width: 100%;
     height: 130px;
     padding: 25px;
   }
-  /* line 177, ../sass/screen.scss */
-  ul.location-search li button {
+  /* line 108, ../sass/_locations.scss */
+  #locations ul.location-search li button {
     display: none;
   }
-  /* line 181, ../sass/screen.scss */
-  ul.location-search li h2 {
+  /* line 112, ../sass/_locations.scss */
+  #locations ul.location-search li h2 {
     display: block;
     margin-bottom: 10px;
   }
-  /* line 185, ../sass/screen.scss */
-  ul.location-search li select.big, ul.location-search li div.row {
+  /* line 116, ../sass/_locations.scss */
+  #locations ul.location-search li select.big, #locations ul.location-search li div.row {
     display: block;
   }
-  /* line 186, ../sass/screen.scss */
-  ul.location-search li:first-child {
+  /* line 117, ../sass/_locations.scss */
+  #locations ul.location-search li:first-child {
     background-image: url("http://placehold.it/450x100/aaaaaa/aaaaaa");
   }
-  /* line 189, ../sass/screen.scss */
-  ul.location-search li:last-child {
+  /* line 120, ../sass/_locations.scss */
+  #locations ul.location-search li:last-child {
     background-image: url("http://placehold.it/450x100/aaaaaa/aaaaaa");
   }
-
-  /* line 194, ../sass/screen.scss */
-  .results {
+  /* line 125, ../sass/_locations.scss */
+  #locations .results {
     min-height: 595px;
   }
+}
 
-  /* line 198, ../sass/screen.scss */
-  .results2 {
+/*
+.results2 {
+	width: 100%;
+	p button {margin: 15px 0 0 10px;}
+	
+	ul.list-view{
+		margin-top: 20px;
+		li {
+			margin-top: 10px;
+			min-height: 110px;
+			border-bottom: 1px solid #aaaaaa;
+			padding-bottom: 15px !important;
+			a { display: block;}
+			.art-info {
+
+				img {
+					width: 75px;
+					max-height: 100px;
+					margin-right: 15px;
+					float: left;
+				}	
+				h2{ font-weight: 700; }
+			}
+
+			.art-info, .piece-location {
+				width: 100%;
+				clear: both;
+			}
+			.art-info{
+				margin-bottom: 10px;
+			}
+			.piece-location {
+				padding-top: 15px 0;
+				p, a {
+					text-align: left;
+				}
+			}
+		}
+
+	}
+}
+*/
+/*
+	ul.location-search{
+		background-image: url('http://placehold.it/400x150&text=Find%20Hearts');
+		padding-top: 150px;
+		li{
+			button{ display: none; }
+			width: 100%;
+			height: 130px;
+			padding: 25px;
+			h2{
+				display: block;
+				margin-bottom: 10px;
+			}
+			select.big, div.row { display: block; }
+			&:first-child{
+				background-image: url('http://placehold.it/450x100/aaaaaa/aaaaaa');
+			}
+			&:last-child{
+				background-image: url('http://placehold.it/450x100/aaaaaa/aaaaaa');
+			}
+		}
+	}
+	.results {
+		min-height: 595px;
+	}
+
+	.results2 {
+	width: 100%;
+	p button {margin: 15px 0 0 10px;}
+	
+	ul.list-view{
+		li {
+			height: 110px;
+			border-bottom: 1px solid #aaaaaa;
+			.art-info {
+				float: left;
+				width: 60%;
+				clear: none;
+			}
+
+			.piece-location {
+				width: 40%;
+				float: right;
+				clear: none;
+			}
+		}
+
+	}
+}
+	
+*/
+/*
+ul.location-search{
+	background-image: url('http://placehold.it/400x100&text=Find%20Hearts');
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top: 100px;
+
+	li { 
+		box-sizing: border-box;
+		width: 50%;
+		display: inline-block;
+		float: left;
+		height: 44px;
+		background-repeat:no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		border: 1px solid #ffffff;
+		
+		h2, div.row, select.big { display: none; }
+	
+		&:first-child{
+			background-image: url('http://placehold.it/450x100&text=By%20Neighborhood');
+		}
+		&:last-child{
+			background-image: url('http://placehold.it/450x100&text=Location');
+		}
+	}
+
+}
+*/
+/* line 3, ../sass/_about.scss */
+#aboutall div.row#heart-grid div {
+  position: relative;
+  margin-bottom: 25px;
+}
+/* line 6, ../sass/_about.scss */
+#aboutall div.row#heart-grid div img {
+  width: 100%;
+}
+/* line 7, ../sass/_about.scss */
+#aboutall div.row#heart-grid div h2 {
+  position: absolute;
+  bottom: 20px;
+  background: rgba(102, 102, 102, 0.9);
+  color: #ffffff;
+  padding: 10px 20px 10px 50px;
+}
+/* line 13, ../sass/_about.scss */
+#aboutall div.row#heart-grid div h2:hover {
+  background: #666666;
+}
+
+/* aboutall */
+/* line 24, ../sass/_about.scss */
+#aboutone img.defaultimg {
+  width: 70%;
+  margin: 0 auto;
+}
+/* line 27, ../sass/_about.scss */
+#aboutone #collapseOne a {
+  display: block;
+  padding: 15px 0;
+}
+/* line 30, ../sass/_about.scss */
+#aboutone #collapseOne a.tour {
+  margin-top: 20px;
+}
+/* line 37, ../sass/_about.scss */
+#aboutone #collapseFour img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 41, ../sass/_about.scss */
+  #aboutone img.defaultimg {
     width: 100%;
   }
-  /* line 200, ../sass/screen.scss */
-  .results2 p button {
-    margin: 15px 0 0 10px;
-  }
-  /* line 203, ../sass/screen.scss */
-  .results2 ul.list-view li {
-    height: 110px;
-    border-bottom: 1px solid #aaaaaa;
-  }
-  /* line 206, ../sass/screen.scss */
-  .results2 ul.list-view li .art-info {
-    float: left;
-    width: 60%;
-    clear: none;
-  }
-  /* line 212, ../sass/screen.scss */
-  .results2 ul.list-view li .piece-location {
-    width: 40%;
-    float: right;
-    clear: none;
+  /* line 42, ../sass/_about.scss */
+  #aboutone #collapseOne a {
+    padding: 10px 0;
   }
 }
