@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>All Hearts - Hearts of SF</title>
+    <title>One Heart - Hearts of SF</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -59,10 +59,120 @@
 		</nav>	
 		
 	<div class="row">
+
 		<div class="col-xs-12 col-md-12">
-			
+			<ol class="breadcrumb">
+			  <li><a href="#">Home</a></li>
+			  <li><a href="about.html">About the Hearts</a></li>
+			  <li class="active">Heart Name</li>
+			</ol>
 		</div>
 	</div>
+		
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-6">
+			<img class="defaultimg" src="images/heart8.jpg" />
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6">
+			<div class="panel-group" id="accordion">
+	
+	
+			  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+				          About <i>The Name of the Heart</i> <span class="glyphicon glyphicon-minus" style="float:right;"></span>
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse in">
+				      <div class="panel-body">
+				      <div class="row">
+						  <div class="col-xs-12 col-sm-6 col-md-6">
+						 
+						 <address>
+						  <strong>Union Square</strong><br>
+						  123 Fake Street (At Geary)<br>
+						  San Francisco, CA 94107<br>
+						  <abbr title="Phone">P:</abbr> (123) 456-7890
+						</address>
+						<br/>
+						<address>
+						  <strong>Viewing Hours</strong><br>
+						  M-F 7am-10pm<br>
+						  S-Su 7am-12pm<br>
+						</address>
+						
+						 
+						  </div>
+						  <div class="col-xs-12 col-sm-6 col-md-6">
+						 
+								<a href="#" class="tour"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;See Walking Tour</a>
+								<a href="#"><span class="glyphicon  glyphicon-eye-open"></span>&nbsp;&nbsp;See User Photos</a>
+								<a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;&nbsp;Merchandise Available</a>
+						 
+						  </div>
+				      </div>
+
+				    </div>
+				  </div>
+			  </div>
+			  
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+			          About Name of Artist<span class="glyphicon glyphicon-plus" style="float:right;"></span>
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseTwo" class="panel-collapse collapse">
+			      <div class="panel-body">
+			        Artist name was born on terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+			      </div>
+			    </div>
+			  </div>
+			  
+			  
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+			          The Make a Wish Foundation<span class="glyphicon glyphicon-plus" style="float:right;"></span>
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseThree" class="panel-collapse collapse">
+			      <div class="panel-body">
+			       The Make a Wish Foundation aims to, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			      </div>
+			    </div>
+			  </div>
+			
+			  
+			   <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+			          See on Map<span class="glyphicon glyphicon-plus" style="float:right;"></span>
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseFour" class="panel-collapse collapse">
+			      <div class="panel-body">
+			       <img src="images/map2.png" />
+			      </div>
+			    </div>
+			  </div>
+			   
+			   
+			   
+			</div>
+		</div>			
+	</div>
+
+				
+		
 
 	
 	</div>
@@ -74,12 +184,21 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script>
-	      $("select.form-control").change(function() {
-	      	alert('heeeeeeey');
-			  	$('.results').css("background-image","url('images/map2.png')")
-	  		});
+/*
+    	$( document ).ready(function() {
+			
+			if( $('div').hasClass('in') ) {
+				$(this).siblings('panel-heading').chlidren('span').addClass('glyphicon-minus').removeClass('glyphicon-plus');
+			} 
+			else {
+				$('span.glypicon').addClass('glyphicon-plus');
+			}
+
+		});
+*/
+
 	   
     </script>
 
   </body>
-</html>
+</html

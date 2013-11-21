@@ -20,6 +20,26 @@
 } /* aboutall */
 
 #aboutone{
+
+	img.defaultimg { width: 70%; margin: 0 auto;}
 	
+
+	#collapseOne a{
+			display: block;
+			padding: 15px 0;
+			&.tour{
+				margin-top: 20px;
+			}
+		}
+
+	
+	#collapseFour {
+		img { width: 100%; }
+	}
+	
+	@media (min-width: 768px) { 
+		img.defaultimg { width: 100%; }
+		#collapseOne a { padding: 10px 0;}
+	}
 	
 }

@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic");
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -80,16 +80,26 @@ body {
   overflow: hidden;
 }
 
+/* line 15, ../sass/screen.scss */
+strong {
+  font-weight: 700;
+}
+
 /* line 16, ../sass/screen.scss */
+i {
+  font-style: italic;
+}
+
+/* line 17, ../sass/screen.scss */
 nav.navbar {
   min-height: 0px;
   background-color: #ffffff;
 }
-/* line 19, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 nav.navbar .navbar-header {
   background: #ffffff;
 }
-/* line 22, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 nav.navbar .navbar-header .navbar-brand {
   background: url("http://localhost:8888/ixd2-proto/images/logo.jpg") 0 0 no-repeat;
   -webkit-background-size: cover;
@@ -102,16 +112,16 @@ nav.navbar .navbar-header .navbar-brand {
 
 /* Tablet and Desktop */
 @media (min-width: 992px) {
-  /* line 36, ../sass/screen.scss */
+  /* line 37, ../sass/screen.scss */
   nav.navbar {
     margin-bottom: 0;
     background-color: #f8f8f8;
   }
-  /* line 40, ../sass/screen.scss */
+  /* line 41, ../sass/screen.scss */
   nav.navbar .navbar-header {
     float: none;
   }
-  /* line 43, ../sass/screen.scss */
+  /* line 44, ../sass/screen.scss */
   nav.navbar .navbar-header .navbar-brand {
     width: 290px;
     height: 175px;
@@ -121,7 +131,7 @@ nav.navbar .navbar-header .navbar-brand {
     float: none;
   }
 
-  /* line 54, ../sass/screen.scss */
+  /* line 55, ../sass/screen.scss */
   ul.navbar-nav li a {
     padding: 15px 30px;
   }
@@ -291,3 +301,31 @@ nav.navbar .navbar-header .navbar-brand {
 }
 
 /* aboutall */
+/* line 24, ../sass/_about.scss */
+#aboutone img.defaultimg {
+  width: 70%;
+  margin: 0 auto;
+}
+/* line 27, ../sass/_about.scss */
+#aboutone #collapseOne a {
+  display: block;
+  padding: 15px 0;
+}
+/* line 30, ../sass/_about.scss */
+#aboutone #collapseOne a.tour {
+  margin-top: 20px;
+}
+/* line 37, ../sass/_about.scss */
+#aboutone #collapseFour img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 41, ../sass/_about.scss */
+  #aboutone img.defaultimg {
+    width: 100%;
+  }
+  /* line 42, ../sass/_about.scss */
+  #aboutone #collapseOne a {
+    padding: 10px 0;
+  }
+}

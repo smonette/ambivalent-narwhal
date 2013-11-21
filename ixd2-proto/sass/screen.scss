@@ -4,7 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-@import url('http://fonts.googleapis.com/css?family=Lato:400,700,900');
+@import url('http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic');
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -12,7 +12,8 @@ body{ font-family: 'Lato', sans-serif; }
 .row div {
 	overflow: hidden;
 }
-
+strong { font-weight: 700;}
+i { font-style: italic; }
 nav.navbar {
 	min-height: 0px;
 	background-color: #ffffff;
