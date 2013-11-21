@@ -171,35 +171,44 @@ nav.navbar .navbar-header .navbar-brand {
 }
 /* line 21, ../sass/_locations.scss */
 #locations .results2 ul.list-view li {
-  height: 110px;
+  margin-top: 10px;
+  min-height: 110px;
   border-bottom: 1px solid #aaaaaa;
+  padding-bottom: 15px !important;
 }
-/* line 24, ../sass/_locations.scss */
+/* line 26, ../sass/_locations.scss */
 #locations .results2 ul.list-view li a {
   display: block;
 }
-/* line 25, ../sass/_locations.scss */
-#locations .results2 ul.list-view li .art-info {
-  float: left;
-  width: 60%;
-}
-/* line 28, ../sass/_locations.scss */
+/* line 29, ../sass/_locations.scss */
 #locations .results2 ul.list-view li .art-info img {
   width: 75px;
   max-height: 100px;
   margin-right: 15px;
   float: left;
 }
-/* line 34, ../sass/_locations.scss */
+/* line 35, ../sass/_locations.scss */
 #locations .results2 ul.list-view li .art-info h2 {
   font-weight: 700;
 }
-/* line 37, ../sass/_locations.scss */
-#locations .results2 ul.list-view li .piece-location {
-  width: 40%;
-  float: right;
+/* line 38, ../sass/_locations.scss */
+#locations .results2 ul.list-view li .art-info, #locations .results2 ul.list-view li .piece-location {
+  width: 100%;
+  clear: both;
 }
-/* line 46, ../sass/_locations.scss */
+/* line 42, ../sass/_locations.scss */
+#locations .results2 ul.list-view li .art-info {
+  margin-bottom: 10px;
+}
+/* line 45, ../sass/_locations.scss */
+#locations .results2 ul.list-view li .piece-location {
+  padding-top: 15px 0;
+}
+/* line 47, ../sass/_locations.scss */
+#locations .results2 ul.list-view li .piece-location p, #locations .results2 ul.list-view li .piece-location a {
+  text-align: left;
+}
+/* line 58, ../sass/_locations.scss */
 #locations ul.location-search {
   background-image: url("http://placehold.it/400x100&text=Find%20Hearts");
   background-repeat: no-repeat;
@@ -209,7 +218,7 @@ nav.navbar .navbar-header .navbar-brand {
   background-size: cover;
   padding-top: 100px;
 }
-/* line 55, ../sass/_locations.scss */
+/* line 67, ../sass/_locations.scss */
 #locations ul.location-search li {
   box-sizing: border-box;
   width: 50%;
@@ -223,74 +232,120 @@ nav.navbar .navbar-header .navbar-brand {
   background-size: cover;
   border: 1px solid #ffffff;
 }
-/* line 68, ../sass/_locations.scss */
+/* line 80, ../sass/_locations.scss */
 #locations ul.location-search li h2, #locations ul.location-search li div.row, #locations ul.location-search li select.big {
   display: none;
 }
-/* line 70, ../sass/_locations.scss */
+/* line 82, ../sass/_locations.scss */
 #locations ul.location-search li:first-child {
   background-image: url("http://placehold.it/450x100&text=By%20Neighborhood");
 }
-/* line 73, ../sass/_locations.scss */
+/* line 85, ../sass/_locations.scss */
 #locations ul.location-search li:last-child {
   background-image: url("http://placehold.it/450x100&text=Location");
 }
 @media (min-device-width: 420px) and (max-device-width: 991px) {
-  /* line 84, ../sass/_locations.scss */
+  /* line 96, ../sass/_locations.scss */
   #locations ul.location-search {
     background-image: url("http://placehold.it/800x100&text=Find%20Hearts");
     padding-top: 100px;
   }
-  /* line 87, ../sass/_locations.scss */
+  /* line 99, ../sass/_locations.scss */
   #locations ul.location-search li {
     width: 100%;
     height: 200px;
   }
-  /* line 90, ../sass/_locations.scss */
+  /* line 102, ../sass/_locations.scss */
   #locations ul.location-search li:first-child {
     background-image: url("http://placehold.it/450x50/aaaaaa/aaaaaa");
   }
-  /* line 93, ../sass/_locations.scss */
+  /* line 105, ../sass/_locations.scss */
   #locations ul.location-search li:last-child {
     background-image: url("http://placehold.it/450x50/aaaaaa/aaaaaa");
   }
 }
 @media (min-width: 992px) {
-  /* line 104, ../sass/_locations.scss */
+  /* line 116, ../sass/_locations.scss */
   #locations ul.location-search {
     background-image: url("http://placehold.it/400x150&text=Find%20Hearts");
     padding-top: 150px;
   }
-  /* line 107, ../sass/_locations.scss */
+  /* line 119, ../sass/_locations.scss */
   #locations ul.location-search li {
     width: 100%;
     height: 130px;
     padding: 25px;
   }
-  /* line 108, ../sass/_locations.scss */
+  /* line 120, ../sass/_locations.scss */
   #locations ul.location-search li button {
     display: none;
   }
-  /* line 112, ../sass/_locations.scss */
+  /* line 124, ../sass/_locations.scss */
   #locations ul.location-search li h2 {
     display: block;
     margin-bottom: 10px;
   }
-  /* line 116, ../sass/_locations.scss */
+  /* line 128, ../sass/_locations.scss */
   #locations ul.location-search li select.big, #locations ul.location-search li div.row {
     display: block;
   }
-  /* line 117, ../sass/_locations.scss */
+  /* line 129, ../sass/_locations.scss */
   #locations ul.location-search li:first-child {
     background-image: url("http://placehold.it/450x100/aaaaaa/aaaaaa");
   }
-  /* line 120, ../sass/_locations.scss */
+  /* line 132, ../sass/_locations.scss */
   #locations ul.location-search li:last-child {
     background-image: url("http://placehold.it/450x100/aaaaaa/aaaaaa");
   }
-  /* line 125, ../sass/_locations.scss */
+  /* line 137, ../sass/_locations.scss */
   #locations .results {
     min-height: 595px;
+  }
+  /* line 140, ../sass/_locations.scss */
+  #locations .results2 {
+    width: 100%;
+  }
+  /* line 142, ../sass/_locations.scss */
+  #locations .results2 p button {
+    margin: 15px 0 0 10px;
+  }
+  /* line 144, ../sass/_locations.scss */
+  #locations .results2 ul.list-view {
+    margin-top: 20px;
+  }
+  /* line 146, ../sass/_locations.scss */
+  #locations .results2 ul.list-view li {
+    height: 110px;
+    border-bottom: 1px solid #aaaaaa;
+  }
+  /* line 149, ../sass/_locations.scss */
+  #locations .results2 ul.list-view li a {
+    display: block;
+  }
+  /* line 150, ../sass/_locations.scss */
+  #locations .results2 ul.list-view li .art-info, #locations .results2 ul.list-view li .piece-location {
+    clear: none;
+  }
+  /* line 151, ../sass/_locations.scss */
+  #locations .results2 ul.list-view li .art-info {
+    float: left;
+    width: 60%;
+  }
+  /* line 154, ../sass/_locations.scss */
+  #locations .results2 ul.list-view li .art-info img {
+    width: 75px;
+    max-height: 100px;
+    margin-right: 15px;
+    float: left;
+  }
+  /* line 160, ../sass/_locations.scss */
+  #locations .results2 ul.list-view li .art-info h2 {
+    font-weight: 700;
+  }
+  /* line 163, ../sass/_locations.scss */
+  #locations .results2 ul.list-view li .piece-location {
+    width: 40%;
+    float: right;
   }
 }
 
