@@ -62,9 +62,46 @@
 		<div class="col-xs-12 col-md-4">
 			<ul class="location-search">
 				<li>
+				<button class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
+				  Search by Neighborhood
+				</button>
+				
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				        <h4 class="modal-title" id="myModalLabel">Search by Neighborhood</h4>
+				      </div>
+				      <div class="modal-body">
+					   <form>
+					    <select class="form-control">
+						  <option>-- Select Neighborhood --</option>
+						  <option>North Beach/Chinatown</option>
+						  <option>Fisherman's Wharf/Marina</option>
+						  <option>Financial District/Embarcadero</option>
+						   <option>Union Square</option>
+						  <option>SOMA</option>
+						  <option>Hayes Valley</option>
+						  <option>Mission/Castro</option>
+						  <option>Hayes Valley</option>
+						  <option>Western Addition/NOPA</option>
+						  <option>Golden Gate Park</option>
+						   <option>Cole Valley/Inner Sunset</option>
+						  <option>Richmond/Presidio</option>
+						  <option>Hayes Valley/Duboce</option>
+						</select>
+					</form>
+				      </div>
+				    </div><!-- /.modal-content -->
+				  </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				
 					<h2>Search By Neighborhood</h2>
 					
-					<select class="form-control">
+					<select class="form-control big">
 					  <option>-- Select Neighborhood --</option>
 					  <option>North Beach/Chinatown</option>
 					  <option>Fisherman's Wharf/Marina</option>
@@ -83,7 +120,39 @@
 					</select>
 
 				</li>
+				
 				<li>
+				
+				<button class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal2">
+				  Search by Location
+				</button>
+
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal2" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				        <h4 class="modal-title" id="myModalLabel">Search by Location</h4>
+				      </div>
+				      <div class="modal-body">
+					    <div class="input-group">
+					      <input type="text" class="form-control" placeholder="Powell & Bush">
+					      <span class="input-group-btn">
+					        <button class="btn btn-default" type="button">Search</button>
+					      </span>
+					    </div><!-- /input-group -->					   </div>
+				    </div><!-- /.modal-content -->
+				  </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+
+				
+				
+				
+				
+				
+				
 					<h2>Search By Location</h2>
 					<div class="row">
 						<div class="col-lg-12">
