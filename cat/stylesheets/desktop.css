@@ -1,0 +1,90 @@
+/* line 1, ../sass/desktop.scss */
+h3 {
+  font-size: 32px;
+}
+
+/* line 2, ../sass/desktop.scss */
+h4, p {
+  font-size: 20px;
+}
+
+/* line 3, ../sass/desktop.scss */
+h4 {
+  margin-top: 60px;
+}
+
+/* line 5, ../sass/desktop.scss */
+.navbar {
+  min-height: 80px;
+}
+/* line 8, ../sass/desktop.scss */
+.navbar .navbar-nav {
+  float: right;
+}
+/* line 11, ../sass/desktop.scss */
+.navbar .navbar-nav > li > a {
+  color: #6493d1;
+  font-size: 16px;
+  margin: 15px 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* line 21, ../sass/desktop.scss */
+section.splash {
+  height: 684px;
+  background-image: url("../img/splash.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+/* line 27, ../sass/desktop.scss */
+section.splash .text-overlay {
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+/* line 34, ../sass/desktop.scss */
+section.splash .text-overlay h2, section.splash .text-overlay a.play-video {
+  font-size: 44px;
+}
+
+/* line 38, ../sass/desktop.scss */
+.row.benefits {
+  padding-bottom: 100px;
+}
+/* line 40, ../sass/desktop.scss */
+.row.benefits h4, .row.benefits p {
+  position: relative;
+  z-index: 2;
+  padding-right: 450px;
+}
+/* line 45, ../sass/desktop.scss */
+.row.benefits div {
+  overflow: hidden;
+}
+/* line 48, ../sass/desktop.scss */
+.row.benefits img {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  bottom: -40px;
+  right: -210px;
+  width: 870px;
+}
+
+/* line 57, ../sass/desktop.scss */
+section.who {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* line 63, ../sass/desktop.scss */
+footer a:hover, footer a:active {
+  color: #6493d1;
+}
+/* line 64, ../sass/desktop.scss */
+footer .social a:hover, footer .social a:active {
+  border-color: #6493d1;
+}

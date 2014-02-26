@@ -1,0 +1,168 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+/* @import "compass/reset"; */
+
+/* $blue: #5a95d2; */
+
+/* 
+
+1. Typography
+2. Header Styling
+3. Section Styling
+4. Footer Styling
+5. Desktop Overrides
+*/
+
+
+/* 1. Typography */
+@import 'webfonts';
+
+a, a:hover { text-decoration: none; }
+
+body { 
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+h2, h3, h4 {
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+h3 { font-size: 24px; }
+h4 { margin-top: 30px;}
+h4, p { font-size: 18px; }
+
+
+
+
+/* 2. Header Styling */
+.navbar{ 
+	text-transform: uppercase; 
+}
+.navbar-default{
+	background-color: #ffffff;
+	border-color: #d6d6d6;
+}
+
+
+/* 3. Section Styling */
+
+section.splash {
+	margin-top: 51px;
+	
+	.text-overlay {
+		background-color: rgba(90, 149, 210, 0.7);
+		position: relative;
+		padding: 20px 0;
+		text-align: center;
+		color: #ffffff;
+
+		h2 {
+			font-size: 22px;
+			line-height: 1.4;
+			margin: 0 0 15px;
+		}
+		
+		a.play-video {
+			display: inline-block;
+			color: #ffffff;
+			text-transform: uppercase;
+			border: 1px solid white;
+			font-size: 22px;
+			padding: 7px 20px;
+			span{ padding-left: 5px;}
+		}
+	}
+}
+
+section.intro {
+	img {
+		width: 100%;
+	}
+}
+.row.benefits img {
+	display: none;
+}
+.row.decor {
+	overflow: hidden;
+	margin: 30px 0 15px 0;
+	p {
+		font-size: 21px;
+		height: 20px;
+		letter-spacing: 6px;
+		color: #5a95d2;
+		font-weight: 400;
+		text-align: center;
+	}
+}
+section.who{
+	padding-top: 20px;
+	background-color: #6493d1; 
+	color: #ffffff;
+	 
+}
+
+
+
+
+/* 4. Footer Stylings */
+
+footer{
+	padding-top: 100px;
+	text-align: center;
+
+	a.contact { 
+		display: block; 
+		color: #7d7d7d;
+		margin: 0 auto;
+	}
+
+	a.phone:before{
+		content: "\26"; 
+	}
+	a.email:before{
+		content: "\25"; 
+	}
+	a.location:before{
+		content: "\28"; 
+	}
+	a:before {
+		font-family: 'mynus';
+		margin: 0 auto;
+		display: block;
+		font-size: 20px;
+	}
+	
+	.social{
+		margin: 50px auto;
+		a {
+			display: inline-block;
+			height: 50px;
+			width: 50px;
+			font-family: 'mynus';
+			border-radius: 50%;
+			border: 3px solid #000000;
+			padding-top: 5px;
+			margin: 0 7px;
+			font-size: 25px;
+			color: #000000;
+		}
+	}
+	.copyright{
+		text-transform: uppercase;
+		color: #9f9f9f;
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 768px) {
+	@import 'tablet';
+}
+
+@media (min-width: 768px) {
+	@import 'desktop';
+}
