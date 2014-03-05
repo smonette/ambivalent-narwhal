@@ -1,0 +1,69 @@
+h3, h4, p {
+  font-size: 20px;
+}
+
+h4 {
+  margin-top: 40px;
+}
+
+.navbar {
+  min-height: 80px;
+}
+.navbar .navbar-nav {
+  float: right;
+}
+.navbar .navbar-nav > li > a {
+  color: #000;
+  font-size: 18px;
+  margin-top: 29px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+a.nav-links {
+  top: -90px;
+}
+
+a.navbar-brand {
+  background-image: url("../img/LOGO_lockup.png");
+  height: 60px;
+  width: 197px;
+  top: 10px;
+  left: 10px;
+}
+
+#videoModal div.modal-dialog {
+  width: 640px;
+}
+
+section.splash {
+  height: 420px;
+}
+section.splash .text-overlay {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+section.splash .text-overlay h2 {
+  font-size: 30px;
+}
+section.splash .text-overlay a.play-video {
+  font-size: 30px;
+}
+
+section.who {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+footer {
+  padding-top: 25px;
+}
+footer a:hover, footer a:active {
+  color: #6493d1;
+}
+footer .social a:hover, footer .social a:active {
+  border-color: #6493d1;
+}
+footer .social {
+  margin: 25px auto;
+}

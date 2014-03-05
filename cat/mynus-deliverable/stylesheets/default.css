@@ -1,4 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,300");
+
 @font-face {
   font-family: 'mynus-new';
   src: url("fonts/mynus-new.eot");
@@ -10,3 +11,319 @@
   font-weight: normal;
   font-style: normal;
 }
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+h2, h3, h4 {
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+h2, h4 {
+  font-weight: 300;
+}
+
+h4 {
+  margin-top: 30px;
+}
+
+h3, h4, p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+sup { /* This is to size the trademark symbols */
+  font-size: 50%;
+  top: -0.75em;
+}
+
+.visible-xxs {
+  display: none;
+}
+
+@media (max-width: 479px) { /* Phone screens only */
+  .visible-xxs {
+    display: block;
+  }
+
+  section.intro {
+    padding-top: 20px;
+  }
+  section.intro img {
+    width: 100%;
+  }
+} /* End Phone only */
+
+.navbar {
+  text-transform: uppercase;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #d6d6d6;
+}
+
+a.nav-links {
+  position: relative;
+  display: block;
+  top: -40px;
+}
+
+a.navbar-brand {
+  display: inline-block;
+  background-image: url("../img/LOGO_no.emblem.png");
+  background-size: 100% 100%;
+  text-indent: -99999em;
+  height: 30px;
+  width: 180px;
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+
+.top-image {
+  height: 250px;
+  background-image: url("../img/IMG_main_retina.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 480px) { /* Phone screens and up */
+  section.splash {
+    height: 300px;
+    background-image: url("../img/IMG_main_retina.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  section.splash .text-overlay {
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  section.splash .text-overlay h2 {
+    font-size: 32px;
+  }
+  section.splash .text-overlay a.play-video {
+    font-size: 25px;
+  }
+  section.splash .text-overlay a.play-video:hover,
+  section.splash .text-overlay a.play-video:hover {
+    background-color: rgba(90, 149, 210, 0.5);
+  }
+
+  section.intro {
+    padding-top: 25px;
+  }
+  section.intro img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+} /* End Phone and up */
+
+section.splash {
+  margin-top: 51px;
+}
+section.splash .text-overlay {
+  background-color: rgba(90, 149, 210, 0.7);
+  position: relative;
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+}
+section.splash .text-overlay h2 {
+  font-size: 22px;
+  line-height: 1.4;
+  margin: 0 0 15px;
+}
+section.splash .text-overlay a.play-video {
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid white;
+  font-size: 18px;
+  padding: 7px 20px;
+}
+section.splash .text-overlay a.play-video span {
+  padding-left: 5px;
+}
+
+.row.benefits {
+  padding-bottom: 20px;
+}
+.row.benefits img {
+  display: none;
+}
+
+.row.decor {
+  overflow: hidden;
+  margin: 20px 0 15px 0;
+}
+.row.decor p {
+  font-size: 21px;
+  height: 20px;
+  letter-spacing: 6px;
+  color: #5a95d2;
+  font-weight: 400;
+  text-align: center;
+}
+
+section.who {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #96b3d9;
+  color: #ffffff;
+}
+section.who a {
+  color: #000000;
+}
+
+footer {
+  text-align: center;
+}
+footer a.contact {
+  display: block;
+  color: #7d7d7d;
+  margin: 20px auto 0px auto;
+  font-size: 18px;
+}
+footer .social {
+  margin: 20px auto;
+}
+footer .social a {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  font-family: 'mynus-new';
+  margin: 0 7px;
+  font-size: 25px;
+  color: #000000;
+}
+footer .copyright p {
+  text-transform: uppercase;
+  color: #9f9f9f;
+  font-size: 13px;
+}
+
+@media (min-width: 768px) { /* Tablet and larger style */
+  h3, h4, p {
+    font-size: 20px;
+  }
+
+  h4 {
+    margin-top: 40px;
+  }
+
+  .navbar {
+    min-height: 80px;
+  }
+  .navbar .navbar-nav {
+    float: right;
+  }
+  .navbar .navbar-nav > li > a {
+    color: #000;
+    font-size: 18px;
+    margin-top: 29px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  a.nav-links {
+    top: -90px;
+  }
+
+  a.navbar-brand {
+    background-image: url("../img/LOGO_lockup.png");
+    height: 60px;
+    width: 197px;
+    top: 10px;
+    left: 10px;
+  }
+
+  #videoModal div.modal-dialog {
+    width: 640px;
+  }
+
+  section.splash {
+    height: 420px;
+  }
+  section.splash .text-overlay {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  section.splash .text-overlay h2 {
+    font-size: 30px;
+  }
+  section.splash .text-overlay a.play-video {
+    font-size: 30px;
+  }
+
+  section.who {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  footer {
+    padding-top: 25px;
+  }
+  footer a:hover, footer a:active {
+    color: #6493d1;
+  }
+  footer .social a:hover, footer .social a:active {
+    border-color: #6493d1;
+  }
+  footer .social {
+    margin: 25px auto;
+  }
+} /* End tablet and up */
+
+@media (min-width: 992px) { /* Desktop styles */
+  section.splash {
+    height: 620px;
+  }
+  section.splash .text-overlay {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  section.splash .text-overlay h2 {
+    font-size: 36px;
+  }
+  section.splash .text-overlay a.play-video {
+    font-size: 36px;
+  }
+
+  #videoModal div.modal-dialog {
+    width: 853px;
+  }
+
+  .row.benefits {
+    padding-bottom: 150px;
+  }
+  .row.benefits h4, .row.benefits p {
+    position: relative;
+    z-index: 2;
+    padding-right: 475px;
+  }
+  .row.benefits img {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 55px;
+    right: -75px;
+    width: 50%;
+  }
+} /* End Desktop */

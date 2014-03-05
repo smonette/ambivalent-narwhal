@@ -1,0 +1,209 @@
+
+/* 
+
+1. Typography
+2. Header Styling
+3. Section Styling
+4. Footer Styling
+5. Desktop Overrides
+*/
+
+
+/* 1. Typography */
+@import 'webfonts';
+
+a, a:hover { text-decoration: none; }
+
+body { 
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+h2, h3, h4 {
+	text-transform: uppercase;
+}
+h3 { font-weight: 500; }
+h2, h4 { font-weight: 300; }
+
+h4 { margin-top: 30px;}
+h3, h4, p { font-size: 18px; line-height: 1.5;}
+
+sup { font-size: 50%; top: -0.75em; }
+
+.visible-xxs {
+	display: none;
+}
+@media (max-width: 479px) {
+	.visible-xxs {
+		display: block;	
+	}
+	section.intro {
+		padding-top: 20px;
+		img { width: 100%; }
+	}
+}
+
+/* 2. Header Styling */
+.navbar{ 
+	text-transform: uppercase; 
+}
+.navbar-default{
+	background-color: #ffffff;
+	border-color: #d6d6d6;
+}
+
+a.nav-links{
+	position: relative;
+	display: block;
+	top: -40px;
+}
+
+a.navbar-brand {
+	display: inline-block;
+	background-image: url('../img/LOGO_no.emblem.png');
+	background-size: 100% 100%;
+	text-indent: -99999em;
+	height: 30px;
+	width: 180px;
+	position: relative;
+	top: 10px;
+	left: 15px;
+}
+
+.top-image {
+	height: 250px;
+	background-image: url('../img/IMG_main_retina.jpg');
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+@media (min-width: 480px) {
+	section.splash {
+		height: 300px;	
+		background-image: url('../img/IMG_main_retina.jpg');
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: cover;	
+		
+		.text-overlay {
+			top: 50%;
+			transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
+			padding-top: 50px;
+			padding-bottom: 50px;
+			
+			h2 { font-size: 32px; }
+			a.play-video{ font-size: 25px;}
+			a.play-video:hover, 
+			a.play-video:hover{ 
+				background-color: rgba(90, 149, 210, 0.5);
+			}
+		}
+	}
+	
+	section.intro {
+		padding-top: 25px;
+		img {
+			width: 50%;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+}
+
+/* 3. Section Styling */
+
+section.splash {
+	margin-top: 51px;
+	
+	.text-overlay {
+		background-color: rgba(90, 149, 210, 0.7);
+		position: relative;
+		padding: 20px 0;
+		text-align: center;
+		color: #ffffff;
+
+		h2 {
+			font-size: 22px;
+			line-height: 1.4;
+			margin: 0 0 15px;
+		}
+		
+		a.play-video {
+			display: inline-block;
+			color: #ffffff;
+			text-transform: uppercase;
+			border: 1px solid white;
+			font-size: 18px;
+			padding: 7px 20px;
+			span{ padding-left: 5px;}
+		}
+	}
+}
+
+.row.benefits {
+	padding-bottom: 20px;
+	img{ display: none; }
+}
+.row.decor {
+	overflow: hidden;
+	margin: 20px 0 15px 0;
+	p {
+		font-size: 21px;
+		height: 20px;
+		letter-spacing: 6px;
+		color: #5a95d2;
+		font-weight: 400;
+		text-align: center;
+	}
+}
+section.who{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #96b3d9; 
+	color: #ffffff;
+	a { color: #000000;}
+	 
+}
+
+
+/* 4. Footer Stylings */
+
+footer{
+	text-align: center;
+
+	a.contact { 
+		display: block; 
+		color: #7d7d7d;
+		margin: 20px auto 0px auto;
+		font-size: 18px;
+	}
+
+	.social{
+		margin: 20px auto;
+		a {
+			display: inline-block;
+			height: 50px;
+			width: 50px;
+			font-family: 'mynus-new';
+			margin: 0 7px;
+			font-size: 25px;
+			color: #000000;
+		}
+	}
+	.copyright p{
+		text-transform: uppercase;
+		color: #9f9f9f;
+		font-size: 13px;
+	}
+}
+
+@media (min-width: 768px) {
+	@import 'med';
+}
+
+@media (min-width: 992px) {
+	@import 'large';
+}
+

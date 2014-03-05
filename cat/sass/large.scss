@@ -1,0 +1,35 @@
+    
+section.splash {
+	height: 620px;
+	.text-overlay {
+		padding-top: 55px;
+		padding-bottom: 55px;
+		
+		h2 { font-size: 36px; }
+		a.play-video{ font-size: 36px;}
+	}
+}
+
+#videoModal div.modal-dialog {
+	width: 853px;
+}
+
+.row.benefits {
+	padding-bottom: 150px;
+	h4, p {
+		position: relative;
+		z-index: 2;
+		padding-right: 475px;
+	}
+	img {
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: 55px;
+		right: -75px;
+		width: 50%;
+	}
+}
+
+
+

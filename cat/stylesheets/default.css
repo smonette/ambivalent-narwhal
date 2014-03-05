@@ -1,4 +1,13 @@
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,300");
+/* 
+
+1. Typography
+2. Header Styling
+3. Section Styling
+4. Footer Styling
+5. Desktop Overrides
+*/
+/* 1. Typography */
 @font-face {
   font-family: 'mynus-new';
   src: url("fonts/mynus-new.eot");
@@ -9,4 +18,320 @@
   src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format("truetype"), url(data:application/font-woff;charset=utf-8;base64,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) format("woff");
   font-weight: normal;
   font-style: normal;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+h2, h3, h4 {
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+h2, h4 {
+  font-weight: 300;
+}
+
+h4 {
+  margin-top: 30px;
+}
+
+h3, h4, p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+sup {
+  font-size: 50%;
+  top: -0.75em;
+}
+
+.visible-xxs {
+  display: none;
+}
+
+@media (max-width: 479px) {
+  .visible-xxs {
+    display: block;
+  }
+
+  section.intro {
+    padding-top: 20px;
+  }
+  section.intro img {
+    width: 100%;
+  }
+}
+/* 2. Header Styling */
+.navbar {
+  text-transform: uppercase;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #d6d6d6;
+}
+
+a.nav-links {
+  position: relative;
+  display: block;
+  top: -40px;
+}
+
+a.navbar-brand {
+  display: inline-block;
+  background-image: url("../img/LOGO_no.emblem.png");
+  background-size: 100% 100%;
+  text-indent: -99999em;
+  height: 30px;
+  width: 180px;
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+
+.top-image {
+  height: 250px;
+  background-image: url("../img/IMG_main_retina.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 480px) {
+  section.splash {
+    height: 300px;
+    background-image: url("../img/IMG_main_retina.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  section.splash .text-overlay {
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  section.splash .text-overlay h2 {
+    font-size: 32px;
+  }
+  section.splash .text-overlay a.play-video {
+    font-size: 25px;
+  }
+  section.splash .text-overlay a.play-video:hover,
+  section.splash .text-overlay a.play-video:hover {
+    background-color: rgba(90, 149, 210, 0.5);
+  }
+
+  section.intro {
+    padding-top: 25px;
+  }
+  section.intro img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+/* 3. Section Styling */
+section.splash {
+  margin-top: 51px;
+}
+section.splash .text-overlay {
+  background-color: rgba(90, 149, 210, 0.7);
+  position: relative;
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+}
+section.splash .text-overlay h2 {
+  font-size: 22px;
+  line-height: 1.4;
+  margin: 0 0 15px;
+}
+section.splash .text-overlay a.play-video {
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid white;
+  font-size: 18px;
+  padding: 7px 20px;
+}
+section.splash .text-overlay a.play-video span {
+  padding-left: 5px;
+}
+
+.row.benefits {
+  padding-bottom: 20px;
+}
+.row.benefits img {
+  display: none;
+}
+
+.row.decor {
+  overflow: hidden;
+  margin: 20px 0 15px 0;
+}
+.row.decor p {
+  font-size: 21px;
+  height: 20px;
+  letter-spacing: 6px;
+  color: #5a95d2;
+  font-weight: 400;
+  text-align: center;
+}
+
+section.who {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #96b3d9;
+  color: #ffffff;
+}
+section.who a {
+  color: #000000;
+}
+
+/* 4. Footer Stylings */
+footer {
+  text-align: center;
+}
+footer a.contact {
+  display: block;
+  color: #7d7d7d;
+  margin: 20px auto 0px auto;
+  font-size: 18px;
+}
+footer .social {
+  margin: 20px auto;
+}
+footer .social a {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  font-family: 'mynus-new';
+  margin: 0 7px;
+  font-size: 25px;
+  color: #000000;
+}
+footer .copyright p {
+  text-transform: uppercase;
+  color: #9f9f9f;
+  font-size: 13px;
+}
+
+@media (min-width: 768px) {
+  h3, h4, p {
+    font-size: 20px;
+  }
+
+  h4 {
+    margin-top: 40px;
+  }
+
+  .navbar {
+    min-height: 80px;
+  }
+  .navbar .navbar-nav {
+    float: right;
+  }
+  .navbar .navbar-nav > li > a {
+    color: #000;
+    font-size: 18px;
+    margin-top: 29px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  a.nav-links {
+    top: -90px;
+  }
+
+  a.navbar-brand {
+    background-image: url("../img/LOGO_lockup.png");
+    height: 60px;
+    width: 197px;
+    top: 10px;
+    left: 10px;
+  }
+
+  #videoModal div.modal-dialog {
+    width: 640px;
+  }
+
+  section.splash {
+    height: 420px;
+  }
+  section.splash .text-overlay {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  section.splash .text-overlay h2 {
+    font-size: 30px;
+  }
+  section.splash .text-overlay a.play-video {
+    font-size: 30px;
+  }
+
+  section.who {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  footer {
+    padding-top: 25px;
+  }
+  footer a:hover, footer a:active {
+    color: #6493d1;
+  }
+  footer .social a:hover, footer .social a:active {
+    border-color: #6493d1;
+  }
+  footer .social {
+    margin: 25px auto;
+  }
+}
+@media (min-width: 992px) {
+  section.splash {
+    height: 620px;
+  }
+  section.splash .text-overlay {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  section.splash .text-overlay h2 {
+    font-size: 36px;
+  }
+  section.splash .text-overlay a.play-video {
+    font-size: 36px;
+  }
+
+  #videoModal div.modal-dialog {
+    width: 853px;
+  }
+
+  .row.benefits {
+    padding-bottom: 150px;
+  }
+  .row.benefits h4, .row.benefits p {
+    position: relative;
+    z-index: 2;
+    padding-right: 475px;
+  }
+  .row.benefits img {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 55px;
+    right: -75px;
+    width: 50%;
+  }
 }
