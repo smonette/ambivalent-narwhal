@@ -57,7 +57,9 @@ a.nav-links{
 	display: block;
 	top: -40px;
 }
-
+.navbar-nav .campaign {
+	span{ display: none; }
+}
 a.navbar-brand {
 	display: inline-block;
 	background-image: url('../img/LOGO_no.emblem.png');
@@ -164,7 +166,12 @@ section.who{
 	background-color: #96b3d9; 
 	color: #ffffff;
 	a { color: #000000;}
-	 
+	img {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 320px;
+	} 
 }
 
 

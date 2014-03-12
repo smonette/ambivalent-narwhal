@@ -42,7 +42,7 @@ h3, h4, p {
   line-height: 1.5;
 }
 
-sup { /* This is to size the trademark symbols */
+sup {
   font-size: 50%;
   top: -0.75em;
 }
@@ -51,7 +51,7 @@ sup { /* This is to size the trademark symbols */
   display: none;
 }
 
-@media (max-width: 479px) { /* Phone screens only */
+@media (max-width: 479px) {
   .visible-xxs {
     display: block;
   }
@@ -62,8 +62,8 @@ sup { /* This is to size the trademark symbols */
   section.intro img {
     width: 100%;
   }
-} /* End Phone only */
-
+}
+/* 2. Header Styling */
 .navbar {
   text-transform: uppercase;
 }
@@ -77,6 +77,10 @@ a.nav-links {
   position: relative;
   display: block;
   top: -40px;
+}
+
+.navbar-nav .campaign span {
+  display: none;
 }
 
 a.navbar-brand {
@@ -99,7 +103,7 @@ a.navbar-brand {
   background-size: cover;
 }
 
-@media (min-width: 480px) { /* Phone screens and up */
+@media (min-width: 480px) {
   section.splash {
     height: 300px;
     background-image: url("../img/IMG_main_retina.jpg");
@@ -133,8 +137,8 @@ a.navbar-brand {
     margin: 0 auto;
     display: block;
   }
-} /* End Phone and up */
-
+}
+/* 3. Section Styling */
 section.splash {
   margin-top: 51px;
 }
@@ -191,7 +195,14 @@ section.who {
 section.who a {
   color: #000000;
 }
+section.who img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 320px;
+}
 
+/* 4. Footer Stylings */
 footer {
   text-align: center;
 }
@@ -219,7 +230,7 @@ footer .copyright p {
   font-size: 13px;
 }
 
-@media (min-width: 768px) { /* Tablet and larger style */
+@media (min-width: 768px) {
   h3, h4, p {
     font-size: 20px;
   }
@@ -230,6 +241,7 @@ footer .copyright p {
 
   .navbar {
     min-height: 80px;
+    z-index: 3;
   }
   .navbar .navbar-nav {
     float: right;
@@ -254,6 +266,16 @@ footer .copyright p {
     left: 10px;
   }
 
+  a.campaign-link {
+    position: absolute;
+    top: 10px;
+    z-index: 4;
+    right: 28px;
+    font-size: 18px;
+    color: #96b3d9;
+    font-weight: 400;
+  }
+
   #videoModal div.modal-dialog {
     width: 640px;
   }
@@ -276,6 +298,9 @@ footer .copyright p {
     padding-top: 45px;
     padding-bottom: 45px;
   }
+  section.who img {
+    margin-top: 65px;
+  }
 
   footer {
     padding-top: 25px;
@@ -289,9 +314,8 @@ footer .copyright p {
   footer .social {
     margin: 25px auto;
   }
-} /* End tablet and up */
-
-@media (min-width: 992px) { /* Desktop styles */
+}
+@media (min-width: 992px) {
   section.splash {
     height: 620px;
   }
@@ -326,4 +350,4 @@ footer .copyright p {
     right: -75px;
     width: 50%;
   }
-} /* End Desktop */
+}

@@ -8,6 +8,7 @@ h4 {
 
 .navbar {
   min-height: 80px;
+  z-index: 3;
 }
 .navbar .navbar-nav {
   float: right;
@@ -32,6 +33,16 @@ a.navbar-brand {
   left: 10px;
 }
 
+a.campaign-link {
+  position: absolute;
+  top: 10px;
+  z-index: 4;
+  right: 28px;
+  font-size: 18px;
+  color: #96b3d9;
+  font-weight: 400;
+}
+
 #videoModal div.modal-dialog {
   width: 640px;
 }
@@ -53,6 +64,9 @@ section.splash .text-overlay a.play-video {
 section.who {
   padding-top: 45px;
   padding-bottom: 45px;
+}
+section.who img {
+  margin-top: 65px;
 }
 
 footer {

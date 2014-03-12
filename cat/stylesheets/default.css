@@ -1,13 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,300");
-/* 
 
-1. Typography
-2. Header Styling
-3. Section Styling
-4. Footer Styling
-5. Desktop Overrides
-*/
-/* 1. Typography */
 @font-face {
   font-family: 'mynus-new';
   src: url("fonts/mynus-new.eot");
@@ -85,6 +77,10 @@ a.nav-links {
   position: relative;
   display: block;
   top: -40px;
+}
+
+.navbar-nav .campaign span {
+  display: none;
 }
 
 a.navbar-brand {
@@ -199,6 +195,12 @@ section.who {
 section.who a {
   color: #000000;
 }
+section.who img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 320px;
+}
 
 /* 4. Footer Stylings */
 footer {
@@ -239,6 +241,7 @@ footer .copyright p {
 
   .navbar {
     min-height: 80px;
+    z-index: 3;
   }
   .navbar .navbar-nav {
     float: right;
@@ -263,6 +266,16 @@ footer .copyright p {
     left: 10px;
   }
 
+  a.campaign-link {
+    position: absolute;
+    top: 10px;
+    z-index: 4;
+    right: 28px;
+    font-size: 18px;
+    color: #96b3d9;
+    font-weight: 400;
+  }
+
   #videoModal div.modal-dialog {
     width: 640px;
   }
@@ -284,6 +297,9 @@ footer .copyright p {
   section.who {
     padding-top: 45px;
     padding-bottom: 45px;
+  }
+  section.who img {
+    margin-top: 65px;
   }
 
   footer {
