@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Steph's Favorite Recipes</title>
+  <style>
+    body{
+      font-family: 'Lato', sans-serif;
+    }
+    header {
+      text-align: center;
+      background: url('http://stephmonette.com/img/Vegetable.jpg') 0 0 no-repeat;
+      background-size: cover;
+      color:black;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 48px;
+      background: white;
+      padding: 20px;
+    }
+    img.profile-pic {
+      width: 200px;
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 50%;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(255,255,255,0.7);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+      text-transform: uppercase;
+    }
+    li a {
+      text-decoration: none;
+    }
+    li a:hover, li a:active {
+      text-decoration: underline;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="profile-pic" src="http://stephmonette.com/img/Monette_Steph-sq.jpg">
+    <h1>Steph's Recipe Blog</h1>
+    <ul>
+      <li><a href="#">Entrees</a></li>
+      <li><a href="#">Desserts</a></li>
+      <li><a href="#">Snacks</a></li>
+      <li><a href="#">About Me</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Diet Dr. Pepper Chocolate Cake</h2>
+    <p>Bacon ipsum dolor sit amet boudin tail sausage venison pig. Pork loin turkey chuck biltong landjaeger beef ham hock hamburger ham jerky chicken tri-tip. Andouille chuck pork chop, pork loin cow kevin ribeye spare ribs strip steak bresaola. Salami pork belly doner shoulder kevin. Bacon ham hock frankfurter tri-tip capicola shank drumstick shankle pork belly cow venison turkey chuck..</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Homemade Spaetzle</h2>
+    <p>Meatball shank pastrami ball tip fatback beef boudin pork chop flank pork belly ham. Salami strip steak chuck kevin shoulder, ball tip meatball drumstick boudin jerky shankle. Filet mignon pig pork chop tenderloin meatloaf rump, short ribs kielbasa venison shank. Kevin meatball landjaeger andouille hamburger filet mignon rump turducken sausage, pork pork chop boudin doner pork loin.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Mom's Lasagna</h2>
+    <p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic Cosby sweater single-origin coffee, bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
