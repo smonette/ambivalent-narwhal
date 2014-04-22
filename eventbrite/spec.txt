@@ -1,0 +1,40 @@
+Front End Engineer Take-Home Quiz
+
+ - Use HTML / CSS / Javascript to implement the "Earl the Cat" game.
+
+ - Browsers we need to support:
+     - IE6, 7, 8, & 9.
+     - Modern versions of Firefox, Safari and Chrome. 
+
+Visual design
+
+ - earl_mockup.jpg is a high-fidelity mockup of what the page should look like.
+   Your final design should mimic the mockup as closely as possible.
+ 
+ - Appropriately use the attached assets, grass.png, earl.png, and sky.png.
+
+ - The main content area is 800 px wide, centered in the viewport.
+ 
+ - The background (orange w/ yellow stripe) should expand with the browser.
+
+Interactions
+
+ - When the user clicks the Fade button, Earl fades out over a period of 400ms, remains invisible for 200 ms, then
+fades in over a period of 400ms.
+
+ - When the user clicks the Jump button, Earl moves up by 100 px, hovers in the air for 200ms, and then moves back
+down to his original position.
+
+ - Only one action can be performed at a time.  For example, while Earl is jumping, the Fade button should be disabled.  Implement some visual cue to indicate that a button is disabled.
+
+ - You can write raw javascript or use any javascript framework that you find appropriate.
+
+Extra Credit
+
+ - Create more buttons that cause Earl to perform different actions.
+
+ - Add webkit or mozilla -specific CSS rules to give a progressively enhanced experience in more modern browsers.
+
+ - Cause Earl to react to some keyboard events... For example, maybe the left and right arrow keys make Earl move.
+
+ - Add some easter eggs, be creative!
