@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Hanging Punctuation Demo</title>
+    <script src="app.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+      p {
+        width: 400px;
+        margin: 10px auto;
+
+      }
+   /*   p.hanging::first-line {
+        text-indent:15px;
+        color: blue;
+      }*/
+      p.hanging-indent {
+        text-indent: -8px;
+      }
+     p.hanging-first-letter::first-letter {
+        margin-left: -5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="hanging-indent">&ldquo;Hanging with negative text indent. Bacon ipsum dolor sit amet meatball drumstick leberkas, kevin hamburger frankfurter shank flank meatloaf short ribs tri-tip porchetta pork chop brisket doner. Meatball turducken swine frankfurter, beef ribs pastrami doner venison kielbasa rump prosciutto boudin capicola chicken landjaeger.&rdquo;</p>
+
+    <p class="hanging-first-letter">'Hanging with first letter. Meatball ball tip pig, shankle flank beef ribs frankfurter kielbasa rump. Doner kielbasa rump beef pig, tongue prosciutto. Pork tail chuck, jerky beef ground round rump meatloaf ribeye prosciutto pork chop capicola. Pork loin ground round sausage, corned beef bresaola leberkas pork chop tail doner shoulder spare ribs meatloaf.'</p>
+
+    <p>"Bacon ipsum dolor sit amet meatball drumstick leberkas, kevin hamburger frankfurter shank flank meatloaf short ribs tri-tip porchetta pork chop brisket doner. Meatball turducken swine frankfurter, beef ribs pastrami doner venison kielbasa rump prosciutto boudin capicola chicken landjaeger."</p>
+
+
+    <p>&lsquo;Meatball ball tip pig, shankle flank beef ribs frankfurter kielbasa rump. Doner kielbasa rump beef pig, tongue prosciutto. Pork tail chuck, jerky beef ground round rump meatloaf ribeye prosciutto pork chop capicola. Pork loin ground round sausage, corned beef bresaola leberkas pork chop tail doner shoulder spare ribs meatloaf.&rsquo;</p>
+  </body>
+</html>
+
+
+
+<!--http://css-tricks.com/almanac/properties/h/hanging-punctuation  -->
