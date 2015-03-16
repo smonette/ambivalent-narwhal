@@ -1,0 +1,7 @@
+.annotator-adder {
+  width: auto; 
+}
+.annotator-adder button {
+  text-indent: none;
+  display: inline-block;
+}

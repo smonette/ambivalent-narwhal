@@ -14,10 +14,13 @@
     <p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quis dolorem accusamus tempore, quam, eaque fugit, maiores porro saepe dignissimos, sint eligendi voluptatum architecto repellat. Quis cupiditate sint, nostrum magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quae voluptates deleniti repellendus iste, ab earum, voluptate quas tenetur, laborum nobis ipsam dolores dignissimos temporibus laudantium, distinctio! Suscipit, quos quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur veritatis vero quidem similique eaque minus, quaerat? Aspernatur ducimus accusamus quia, fugit incidunt saepe quas. Esse alias eveniet, nostrum ipsum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad culpa quia quod quam necessitatibus nam magnam porro itaque obcaecati aliquam dolores in pariatur commodi distinctio, deserunt nobis nostrum ea sint.</p>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/annotator.min.js"></script>
+<!--     <script src="js/annotator.min.js"></script>
+ -->    <script src="js/mule-annotate.js"></script>
+    <script src="js/annotator.markdown.min.js"></script>
     <script>
       jQuery(function ($) {
-          $('#content').annotator();
+          var content = $('#content').annotator();
+          content.annotator('addPlugin', 'Markdown');
       });
     </script>
   </body>
